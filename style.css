@@ -36,7 +36,7 @@ img {
     font-weight: normal;
 }
 .sub-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 0 8px 8px;
     border-bottom: 2px #0bd solid;
     font-weight: normal;
@@ -49,7 +49,8 @@ img {
     background: tomato;
     color: #fff;
     border-radius: 5px;
-    padding: 18px 32px;
+/*    padding: 18px 32px; */
+    padding: 10px 0px;
 }
 .button:hover {
 /*    background: #0090aa; */
@@ -61,12 +62,6 @@ iframe {
     width: 100%;
 }
 
-/* video */
-.video_wrapper {
-    size: cover;
-    position: center top;
-}
-
 /* HEADER
 ------------------------------- */
 .page-header {
@@ -74,7 +69,9 @@ iframe {
     justify-content: space-between;
 }
 .logo {
-    width: 150px;
+/*    width: 150px; */
+    width: 50px;
+/*    margin-top: 10px; */
     margin-top: 10px;
 }
 .main-nav {
@@ -98,7 +95,8 @@ iframe {
 ------------------------------- */
 #home {
     background-image: url(osho-back2.jpg);
-    min-height: 200vh;
+/*    min-height: fit-content; */
+    min-height: 1400px;
 }
 #home .page-title {
     text-transform: none;
@@ -109,14 +107,15 @@ iframe {
 }
 .home-content p {
     font-size: 1.5rem;
-    margin: 10px 0 42px;
+    margin: 5px 0 10px;
 }
 
 /* question
 ------------------------------- */
 #question {
     background-image: url(osho-face.jpg);
-    min-height: 200vh;
+/*    min-height: 200vh; */
+    min-height: auto;
 }
 .question-content {
     max-width: 560px;
@@ -124,6 +123,7 @@ iframe {
 }
 .question-content .page-title {
     font-size: 2.5rem;
+    font-weight: border;
     text-transform: none;
     text-align: center;
 }
@@ -131,7 +131,8 @@ iframe {
     font-size: 2.5rem;
     font-weight: border;
     color: tomato;
-    margin: 10px 0 42px;
+/*    margin: 10px 0 42px; */
+    margin: 5px 0 10px;
 }
 
 .grid {
@@ -166,11 +167,12 @@ footer p {
 ------------------------------- */
 @media (max-width: 600px) {
     .page-title {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
+    
     .page-header {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
     }
 
     /* HEADER */
@@ -183,13 +185,28 @@ footer p {
     }
 
     /* HOME */
+  #home {
+    background-image: url(osho-back2.jpg);
+    min-height: fit-content;
+  }
     .home-content {
         margin-top: 20%;
     }
-
+    .home-content p {
+       font-size: 1.2rem;
+    }
     /* QUESTION */
     .question-content {
         margin-top: 20%;
     }
+    .question-content .page-title {
+      font-size: 1.4rem;
+    }
+   .question-content p {
+     font-size: 1.4rem;
+    }
 
+    .button {
+      font-size: 1.2rem;
+    }
 }
